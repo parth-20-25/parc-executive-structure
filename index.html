@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARC Organization — Executive Hierarchy System</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body>
+ 
+<!-- HEADER -->
+<div class="page-wrapper">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <div class="logo-mark">P</div>
+      <div class="logo-text">
+        <span class="logo-name">PARC</span>
+        <span class="logo-sub">Organization</span>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="header-tag">Confidential · Internal Use</span>
+      <span>Executive Hierarchy System</span>
+    </div>
+    <div class="header-controls">
+      <button class="ctrl-btn ghost" onclick="window.print()">Export PDF</button>
+    </div>
+  </div>
+</header>
+ 
+<!-- LEGEND -->
+<div class="legend-bar">
+  <div class="legend-item"><div class="legend-dot" style="background:#0D1B2A"></div>L1 · Board & Directors</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1A3A5C"></div>L2 · Executive Leadership</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1A5276"></div>L3 · Functional Heads (GM)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1B6CA8"></div>L4 · Department Heads</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#2E86C1"></div>L5 · Management Layer</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3498DB"></div>L6 · Technical Leadership</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#5DADE2"></div>L7 · Execution Layer</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#85C1E9"></div>L8 · Floor & Support</div>
+</div>
+ 
+<main>
+ 
+<!-- ================================================= -->
+<!-- L1: BOARD / DIRECTORS -->
+<!-- ================================================= -->
+<section class="section-bg">
+  <div class="section-label">
+    <h2>Board of Directors</h2>
+    <div class="divider"><span>L1 · Ownership &amp; Governance</span></div>
+  </div>
+  <div class="top-row board-row">
+    <div class="node node-l1" onclick="openModal('bharat-gite')" onmouseenter="showTooltip(event,'bharat-gite')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">BG</div>
+        <div class="node-name">Mr. Bharat Gite</div>
+        <div class="node-title">Director</div>
+        <div class="node-dept">Board of Directors</div>
+        <div class="node-level">L1 · Ownership</div>
+      </div>
+    </div>
+    <div class="node node-l1" onclick="openModal('prashant-patil')" onmouseenter="showTooltip(event,'prashant-patil')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">PP</div>
+        <div class="node-name">Mr. Prashant Patil</div>
+        <div class="node-title">Director</div>
+        <div class="node-dept">Board of Directors</div>
+        <div class="node-level">L1 · Ownership</div>
+      </div>
+    </div>
+    <div class="node node-l1" onclick="openModal('nitin-kakade')" onmouseenter="showTooltip(event,'nitin-kakade')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">NK</div>
+        <div class="node-name">Mr. Nitin Kakade</div>
+        <div class="node-title">Director</div>
+        <div class="node-dept">Board of Directors</div>
+        <div class="node-level">L1 · Ownership</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L2: CEO / COO -->
+<!-- ================================================= -->
+<section class="section-bg-alt">
+  <div class="section-label">
+    <h2>Executive Leadership</h2>
+    <div class="divider"><span>L2 · Chief Executive</span></div>
+  </div>
+  <div class="top-row ceo-row">
+    <div class="node node-l2" onclick="openModal('ceo')" onmouseenter="showTooltip(event,'ceo')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar" style="background:var(--gold); color:var(--navy); width:52px; height:52px; font-size:18px;">CEO</div>
+        <div class="node-name" style="font-size:14px;">[Executive Name]</div>
+        <div class="node-title">Chief Executive Officer / Chief Operating Officer</div>
+        <div class="node-dept">Executive Office</div>
+        <div class="node-level">L2 · Executive Leadership</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L3: GM / FUNCTIONAL HEADS -->
+<!-- ================================================= -->
+<section class="section-bg">
+  <div class="section-label">
+    <h2>Strategic Functional Heads</h2>
+    <div class="divider"><span>L3 · General Managers &amp; Division Heads</span></div>
+  </div>
+  <div class="top-row gm-row">
+    <div class="node node-l3" onclick="openModal('gm-eng')" onmouseenter="showTooltip(event,'gm-eng')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">GM</div>
+        <div class="node-name">[Name]</div>
+        <div class="node-title">General Manager</div>
+        <div class="node-dept">Engineering Division</div>
+        <div class="node-level">L3</div>
+      </div>
+    </div>
+    <div class="node node-l3" onclick="openModal('gm-ops')" onmouseenter="showTooltip(event,'gm-ops')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">GM</div>
+        <div class="node-name">[Name]</div>
+        <div class="node-title">General Manager</div>
+        <div class="node-dept">Operations Division</div>
+        <div class="node-level">L3</div>
+      </div>
+    </div>
+    <div class="node node-l3" onclick="openModal('gm-comm')" onmouseenter="showTooltip(event,'gm-comm')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">GM</div>
+        <div class="node-name">[Name]</div>
+        <div class="node-title">General Manager</div>
+        <div class="node-dept">Commercial Division</div>
+        <div class="node-level">L3</div>
+      </div>
+    </div>
+    <div class="node node-l3" onclick="openModal('head-qa')" onmouseenter="showTooltip(event,'head-qa')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">QA</div>
+        <div class="node-name">[Name]</div>
+        <div class="node-title">Division Head</div>
+        <div class="node-dept">Quality Assurance</div>
+        <div class="node-level">L3</div>
+      </div>
+    </div>
+    <div class="node node-l3" onclick="openModal('head-hr')" onmouseenter="showTooltip(event,'head-hr')" onmouseleave="hideTooltip()">
+      <div class="node-inner">
+        <div class="node-avatar">HR</div>
+        <div class="node-name">[Name]</div>
+        <div class="node-title">Division Head</div>
+        <div class="node-dept">HR &amp; Administration</div>
+        <div class="node-level">L3</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L4: DEPARTMENT STRUCTURE -->
+<!-- ================================================= -->
+<section class="section-bg-alt">
+  <div class="section-label">
+    <h2>Department Structure</h2>
+    <div class="divider"><span>L4 · Department Heads</span></div>
+  </div>
+  <div class="division-wrapper">
+ 
+    <!-- ENGINEERING -->
+    <div class="division-block">
+      <div class="division-header division-engineering">⚙ Engineering Division</div>
+      <div class="division-content">
+        <div class="node node-l4" onclick="openModal('head-design')" onmouseenter="showTooltip(event,'head-design')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">DE</div>
+            <div class="node-name">Head – Design</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Design</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-control')" onmouseenter="showTooltip(event,'head-control')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">CO</div>
+            <div class="node-name">Head – Control</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Control</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-rd')" onmouseenter="showTooltip(event,'head-rd')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">RD</div>
+            <div class="node-name">Head – R&amp;D</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">R&amp;D</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-erp')" onmouseenter="showTooltip(event,'head-erp')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">ER</div>
+            <div class="node-name">Head – ERP</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">ERP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- OPERATIONS -->
+    <div class="division-block">
+      <div class="division-header division-operations">⚡ Operations Division</div>
+      <div class="division-content">
+        <div class="node node-l4" onclick="openModal('head-pm')" onmouseenter="showTooltip(event,'head-pm')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">PM</div>
+            <div class="node-name">Head – PM</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Project Mgmt</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-proj')" onmouseenter="showTooltip(event,'head-proj')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">PJ</div>
+            <div class="node-name">Head – Project</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Projects</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-purch')" onmouseenter="showTooltip(event,'head-purch')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">PU</div>
+            <div class="node-name">Head – Purchase</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Purchase</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-svc')" onmouseenter="showTooltip(event,'head-svc')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">SV</div>
+            <div class="node-name">Head – Service</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Service</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-mfg')" onmouseenter="showTooltip(event,'head-mfg')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">MF</div>
+            <div class="node-name">Head – Mfg</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Manufacturing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- COMMERCIAL -->
+    <div class="division-block">
+      <div class="division-header division-commercial">📊 Commercial Division</div>
+      <div class="division-content">
+        <div class="node node-l4" onclick="openModal('head-mkt')" onmouseenter="showTooltip(event,'head-mkt')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">MK</div>
+            <div class="node-name">Head – Marketing</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Marketing</div>
+          </div>
+        </div>
+        <div class="node node-l4" onclick="openModal('head-acc')" onmouseenter="showTooltip(event,'head-acc')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">AF</div>
+            <div class="node-name">Head – Accounts</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Accounts &amp; Finance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- QUALITY -->
+    <div class="division-block">
+      <div class="division-header division-quality">✓ Quality Division</div>
+      <div class="division-content">
+        <div class="node node-l4" onclick="openModal('head-quality')" onmouseenter="showTooltip(event,'head-quality')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">QC</div>
+            <div class="node-name">Head – Quality</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Quality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- PEOPLE -->
+    <div class="division-block">
+      <div class="division-header division-people">🧑 People Division</div>
+      <div class="division-content">
+        <div class="node node-l4" onclick="openModal('head-hrd')" onmouseenter="showTooltip(event,'head-hrd')" onmouseleave="hideTooltip()">
+          <div class="node-inner">
+            <div class="node-avatar avatar-small">HR</div>
+            <div class="node-name">Head – HR</div>
+            <div class="node-title">[Name]</div>
+            <div class="node-dept">Human Resources</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L5: MANAGEMENT LAYER -->
+<!-- ================================================= -->
+<section class="section-bg">
+  <div class="section-label">
+    <h2>Management Layer</h2>
+    <div class="divider"><span>L5 · Execution Ownership &amp; KPI Accountability</span></div>
+  </div>
+  <div class="compact-grid">
+    <div class="compact-node node-l5" onclick="openModal('sr-mgr')" onmouseenter="showTooltip(event,'sr-mgr')" onmouseleave="hideTooltip()">
+      <div class="node-name">Senior Manager</div>
+      <div class="node-title">Engineering</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5" onclick="openModal('mgr-eng')" onmouseenter="showTooltip(event,'mgr-eng')" onmouseleave="hideTooltip()">
+      <div class="node-name">Manager</div>
+      <div class="node-title">Engineering</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5" onclick="openModal('asst-mgr-eng')" onmouseenter="showTooltip(event,'asst-mgr-eng')" onmouseleave="hideTooltip()">
+      <div class="node-name">Asst. Manager</div>
+      <div class="node-title">Engineering</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5" onclick="openModal('sr-mgr-ops')" onmouseenter="showTooltip(event,'sr-mgr-ops')" onmouseleave="hideTooltip()">
+      <div class="node-name">Senior Manager</div>
+      <div class="node-title">Operations</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Manager</div>
+      <div class="node-title">Operations</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Asst. Manager</div>
+      <div class="node-title">Operations</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Senior Manager</div>
+      <div class="node-title">Commercial</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Manager</div>
+      <div class="node-title">Commercial</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Asst. Manager</div>
+      <div class="node-title">Quality</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+    <div class="compact-node node-l5">
+      <div class="node-name">Manager</div>
+      <div class="node-title">HR &amp; Admin</div>
+      <div class="node-dept compact-level-label">L5</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L6: TECHNICAL LEADERSHIP -->
+<!-- ================================================= -->
+<section class="section-bg-alt">
+  <div class="section-label">
+    <h2>Technical Leadership</h2>
+    <div class="divider"><span>L6 · Technical Delivery Leadership</span></div>
+  </div>
+  <div class="compact-grid">
+    <div class="compact-node node-l6">
+      <div class="node-name">Lead Engineer</div>
+      <div class="node-title">Design / Control</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Senior Engineer</div>
+      <div class="node-title">R&amp;D / ERP</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Project Lead</div>
+      <div class="node-title">Operations</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Team Lead</div>
+      <div class="node-title">Manufacturing</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Lead Engineer</div>
+      <div class="node-title">Service</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Senior Engineer</div>
+      <div class="node-title">Purchase</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+    <div class="compact-node node-l6">
+      <div class="node-name">Team Lead</div>
+      <div class="node-title">Quality</div>
+      <div class="node-dept" style="font-size:8px;">L6</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L7: EXECUTION LAYER -->
+<!-- ================================================= -->
+<section class="section-bg">
+  <div class="section-label">
+    <h2>Execution Layer</h2>
+    <div class="divider"><span>L7 · Technical Professionals</span></div>
+  </div>
+  <div class="compact-grid">
+    <div class="compact-node node-l7">
+      <div class="node-name">Engineer</div>
+      <div class="node-title">All Divisions</div>
+      <div class="node-dept" style="font-size:8px;">L7</div>
+    </div>
+    <div class="compact-node node-l7">
+      <div class="node-name">GET</div>
+      <div class="node-title">Grad Engineer Trainee</div>
+      <div class="node-dept" style="font-size:8px;">L7</div>
+    </div>
+    <div class="compact-node node-l7">
+      <div class="node-name">DET</div>
+      <div class="node-title">Diploma Engineer Trainee</div>
+      <div class="node-dept" style="font-size:8px;">L7</div>
+    </div>
+    <div class="compact-node node-l7">
+      <div class="node-name">Associate</div>
+      <div class="node-title">All Departments</div>
+      <div class="node-dept" style="font-size:8px;">L7</div>
+    </div>
+    <div class="compact-node node-l7">
+      <div class="node-name">Technician</div>
+      <div class="node-title">Service / Ops</div>
+      <div class="node-dept" style="font-size:8px;">L7</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECTOR -->
+<div class="flow-arrow"><div class="flow-arrow-icon">↓</div></div>
+ 
+<!-- ================================================= -->
+<!-- L8: FLOOR / SUPPORT -->
+<!-- ================================================= -->
+<section class="section-bg-alt">
+  <div class="section-label">
+    <h2>Floor &amp; Support Execution</h2>
+    <div class="divider"><span>L8 · Operational Base</span></div>
+  </div>
+  <div class="compact-grid">
+    <div class="compact-node node-l8">
+      <div class="node-name">Operator</div>
+      <div class="node-title">Manufacturing / Floor</div>
+      <div class="node-dept" style="font-size:8px;">L8</div>
+    </div>
+    <div class="compact-node node-l8">
+      <div class="node-name">Helper</div>
+      <div class="node-title">Operations</div>
+      <div class="node-dept" style="font-size:8px;">L8</div>
+    </div>
+    <div class="compact-node node-l8">
+      <div class="node-name">Store Staff</div>
+      <div class="node-title">Stores / Inventory</div>
+      <div class="node-dept" style="font-size:8px;">L8</div>
+    </div>
+    <div class="compact-node node-l8">
+      <div class="node-name">Inspection Staff</div>
+      <div class="node-title">Quality</div>
+      <div class="node-dept" style="font-size:8px;">L8</div>
+    </div>
+    <div class="compact-node node-l8">
+      <div class="node-name">Support Staff</div>
+      <div class="node-title">Administration</div>
+      <div class="node-dept" style="font-size:8px;">L8</div>
+    </div>
+  </div>
+</section>
+ 
+</main>
+ 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <span class="footer-brand">PARC Organization</span>
+  <span>Executive Hierarchy System · <span>Confidential</span> · Internal Use Only</span>
+  <span>Version 1.0 · 2025</span>
+</footer>
+</div>
+<!-- TOOLTIP -->
+<div class="tooltip" id="tooltip">
+  <div class="tooltip-header">
+    <div class="tooltip-avatar" id="tt-avatar">–</div>
+    <div>
+      <div class="tooltip-name" id="tt-name">–</div>
+      <div class="tooltip-pos" id="tt-pos">–</div>
+    </div>
+  </div>
+  <div class="tooltip-row">
+    <span class="tooltip-row-label">Department</span>
+    <span class="tooltip-row-val" id="tt-dept">–</span>
+  </div>
+  <div class="tooltip-row">
+    <span class="tooltip-row-label">Level</span>
+    <span class="tooltip-row-val" id="tt-level">–</span>
+  </div>
+  <div class="tooltip-row">
+    <span class="tooltip-row-label">Reports To</span>
+    <span class="tooltip-row-val" id="tt-reports">–</span>
+  </div>
+  <div class="tooltip-hint">Click for full profile →</div>
+</div>
+ 
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-box" id="modal-box">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-avatar" id="m-avatar">–</div>
+        <div>
+          <div class="modal-name" id="m-name">–</div>
+          <div class="modal-pos" id="m-pos">–</div>
+          <div class="modal-level-badge" id="m-level">–</div>
+        </div>
+      </div>
+      <button class="modal-close" aria-label="Close modal">✕</button>
+    </div>
+    <div class="modal-body">
+ 
+      <div class="modal-section">
+        <div class="modal-section-title">Position Details</div>
+        <div class="modal-fields">
+          <div class="modal-field">
+            <div class="modal-field-label">Department</div>
+            <div class="modal-field-val" id="m-dept">–</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Division</div>
+            <div class="modal-field-val" id="m-div">–</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Reports To</div>
+            <div class="modal-field-val" id="m-reports">–</div>
+          </div>
+          <div class="modal-field">
+            <div class="modal-field-label">Authority Level</div>
+            <div class="modal-field-val" id="m-auth">–</div>
+          </div>
+          <div class="modal-field full">
+            <div class="modal-field-label">Official Email</div>
+            <div class="modal-field-val" id="m-email">–</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="modal-section">
+        <div class="modal-section-title">Role Summary</div>
+        <div class="resp-desc" id="m-desc">–</div>
+      </div>
+ 
+      <div class="modal-section">
+        <div class="modal-section-title">Key Responsibilities</div>
+        <div class="resp-desc" id="m-resp">–</div>
+      </div>
+ 
+      <div class="modal-section">
+        <div class="modal-section-title">Contact &amp; Profile</div>
+        <div class="modal-links">
+          <button class="modal-link-btn primary" id="m-email-btn">📧 Send Email</button>
+          <button class="modal-link-btn outline" id="m-linkedin-btn">LinkedIn Profile</button>
+          <button class="modal-link-btn outline">View Team</button>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+ 
+</body>
+
+</html>
